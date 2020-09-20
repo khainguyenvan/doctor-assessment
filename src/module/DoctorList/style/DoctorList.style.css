@@ -1,0 +1,117 @@
+.App {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  width: 80%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .App {
+    width: auto;
+  }
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.row > * + * {
+  margin-left: 10px;
+}
+
+.doctor-item{
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow-general);
+}
+
+.doctor-item img{
+  border-radius: 10px;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.doctor-item .doctor-info{
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  justify-content: space-around;
+}
+
+.doctor-item .doctor-name{
+  font-size: 1.1rem;
+}
+
+.doctor-item .clinic{
+  margin-top: 10px;
+}
+
+.doctor-item .star{
+  color: #dfac50;
+}
+
+.mr-5{
+  margin-right: 5px;
+}
+
+.route-title{
+  color: var(--gray);
+  padding: 10px;
+}
+
+.sort-type{
+  color: var(--gray);
+}
+
+.sort-type > *{
+  padding: 10px;
+  margin: 0;
+}
+
+.sort-type > *.active{
+  color: white;
+  background: var(--green);
+  border-radius: 10px;
+}
+
+.clinic .clinic-name{
+  font-size: 0.8rem;
+}
+
+.clinic .clinic-addr{
+  margin-top: 3px;
+  font-size: 0.75rem;
+}
+
+.align-items-center{
+  align-items: center;
+}
+
+.filter-opt{
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid var(--gray);
+  cursor: default;
+}
+
+.filter-opt.active{
+  color: white;
+  background-color: var(--green);
+  border: none;
+}
+
+.filter-opt .fa{
+  margin-left: 5px;
+  font-size: 0.7rem;
+}
+
+.filter-opt .fa:hover{
+  cursor: pointer;
+}
+
+.font-color-gray{
+  color: var(--gray);
+}
